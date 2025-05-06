@@ -7,7 +7,7 @@ const Books = ()=>{
     console.log(data)
     const handleDelete = async(bookId)=>{
         try{
-            const response = await fetch(`http://localhost:3000/books/${bookId}`,{
+            const response = await fetch(`https://be-4-assignment1-tawny.vercel.app/books/${bookId}`,{
                 method:'DELETE'
             })
             if(!response){
